@@ -1,38 +1,44 @@
-.App {
+.resume-card-body{
+  padding: 0.75rem 1.75rem !important;
+}
+
+.resume-card-picture{
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.resume-card-image{
+  width: 85px !important;
+  height: 85px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.resume-card-title{
+  text-align: center;
+  font-weight: bolder !important;
+  font-size: 1rem !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.resume-card-subtitle{
+  text-align: center;
+  font-size: 0.9rem !important;
 }
 
-.App-link {
-  color: #61dafb;
+.resume-card-buttons{
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resume-card-nobuttons{
+  margin-bottom: 15px !important;
+}
+
+.resume-card-button-label{
+  margin-left: 5px !important;
+}
+
+.input-filter{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

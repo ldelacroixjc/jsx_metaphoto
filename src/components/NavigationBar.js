@@ -16,13 +16,13 @@ const NavigationBar = props => {
 
     return (
         <>
-            <Navbar {...props}>
+            <Navbar fixed='top' expand='sm' color='light'>
                 <NavbarBrand href="/">MetaPhoto</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="me-auto" navbar>
-                        <NavItem>
-                            <NavLink href="/components/">Components</NavLink>
+                        <NavItem onClick={props.onFilter}>
+                            <NavLink><i className="fa-filter"></i> Filtros</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="https://github.com/reactstrap/reactstrap">

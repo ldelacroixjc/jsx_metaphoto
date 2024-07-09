@@ -1,16 +1,17 @@
 import { actionTypes } from "../actions/photo.actions";
 
 const INIT_STATE = {
-	photos: []
+	list: []
 };
 
-export default (state = INIT_STATE, action) => {
+const photoReducer = (state = INIT_STATE, action) => {
 	switch (action.type) {
 		case actionTypes.SET_PHOTOS:
-			const photos = action.payload;
-			return { ...state, photos: photos };
-
+			const list = action.payload;
+			return { ...state, list: list };
 		default:
 			return state || INIT_STATE		
 	}
 };
+
+export default photoReducer;
