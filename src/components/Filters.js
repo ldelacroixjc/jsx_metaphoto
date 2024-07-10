@@ -31,7 +31,7 @@ const Filters = props => {
         }
         const queryParams = params.length ? `?${params.join('&')}` : '';
         props.onApply(queryParams);
-        props.onCancel()
+        props.onCancel();
     }
 
     return (

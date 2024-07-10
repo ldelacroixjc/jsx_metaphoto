@@ -60,8 +60,8 @@ const PhotoContainer = props => {
     );
 
     return (
-        <Row>
-            <Col xs={12}>
+        <Row className='mt-5 ms-5 me-5'>
+            <Col xs={12} className='mt-5'>
                 <Row>
                     {photoList}
                 </Row>

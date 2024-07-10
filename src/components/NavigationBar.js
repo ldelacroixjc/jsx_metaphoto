@@ -16,12 +16,12 @@ const NavigationBar = props => {
 
     return (
         <>
-            <Navbar fixed='top' expand='sm' color='light'>
+            <Navbar fixed='top' expand='sm'>
                 <NavbarBrand href="/">MetaPhoto</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="me-auto" navbar>
-                        <NavItem onClick={props.onFilter}>
+                    <Nav className="me-auto" pills>
+                        <NavItem onClick={props.onFilter} className='menu-item'>
                             <NavLink><i className="fa-filter"></i> Filtros</NavLink>
                         </NavItem>
                         <NavItem>
