@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_URL = (process.env.NODE_ENV === 'production') 
-    ? 'https://xyybyeuny5.execute-api.us-east-1.amazonaws.com' 
+    ? 'https://fhvuzbhvl4.execute-api.us-east-1.amazonaws.com' 
     : 'http://localhost:3000';
 
 export const $http = axios.create({

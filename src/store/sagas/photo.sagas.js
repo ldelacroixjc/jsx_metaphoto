@@ -3,7 +3,10 @@ import { actionTypes, setPhotos } from '../actions/photo.actions';
 import { $http } from "../http/http";
 
 const getPhotosService = async (filters) => {
-    const result = await $http.get(`/dev/externalapi/photos${filters}`);
+    const api_resource = (process.env.NODE_ENV === 'production') 
+    ? '/prod/externalapi/photos' 
+    : '/dev/externalapi/photos';
+    const result = await $http.get(`${api_resource}${filters}`);
     return result;
 }
 
