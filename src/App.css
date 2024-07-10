@@ -1,0 +1,44 @@
+.resume-card-body{
+  padding: 0.75rem 1.75rem !important;
+}
+
+.resume-card-picture{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.resume-card-image{
+  width: 85px !important;
+  height: 85px !important;
+}
+
+.resume-card-title{
+  text-align: center;
+  font-weight: bolder !important;
+  font-size: 1rem !important;
+}
+
+.resume-card-subtitle{
+  text-align: center;
+  font-size: 0.9rem !important;
+}
+
+.resume-card-buttons{
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.resume-card-nobuttons{
+  margin-bottom: 15px !important;
+}
+
+.resume-card-button-label{
+  margin-left: 5px !important;
+}
+
+.input-filter{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
