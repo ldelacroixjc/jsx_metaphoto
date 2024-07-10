@@ -29,7 +29,7 @@ const Filters = props => {
         if (email) {
             params.push(`album.user.email=${encodeURIComponent(email)}`);
         }
-        const queryParams = params.length ? `?${params.join('&')}` : '';
+        const queryParams = params.length ? `${params.join('&')}` : '';
         props.onApply(queryParams);
         props.onCancel();
     }

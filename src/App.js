@@ -11,15 +11,21 @@ import { store, persistor } from './store/store';
 function App() {
 
     const [showFilters, setShowFilters] = useState(false);
-    const [filters, setFilters] = useState('')
+    const [filters, setFilters] = useState('');
+    const [limit, setLimit] = useState(25);
 
     return (
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
                 <NavigationBar 
                     onFilter={() => setShowFilters(!showFilters)}
+                    onChangeLimit={setLimit}
+                    limit={limit}
                 />
-                <PhotoContainer filters={filters}/>
+                <PhotoContainer 
+                    filters={filters}
+                    limit={limit}
+                />
                 <Filters
                     isOpen={showFilters}
                     onCancel={() => setShowFilters(!showFilters)}

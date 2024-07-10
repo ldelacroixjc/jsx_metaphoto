@@ -3,9 +3,9 @@ export const actionTypes = {
     SET_PHOTOS: 'SET_PHOTOS'
 }
 
-export const getPhotos = (filters) => ({
+export const getPhotos = (filters, limit) => ({
     type: actionTypes.GET_PHOTOS,
-    payload: filters
+    payload: {filters, limit}
 });
 
 export const setPhotos= (photos) => ({
