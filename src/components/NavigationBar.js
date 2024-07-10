@@ -6,11 +6,11 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
     Dropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem
+    DropdownItem,
+    Button
 } from 'reactstrap';
 
 const NavigationBar = props => {
@@ -22,13 +22,13 @@ const NavigationBar = props => {
 
     return (
         <>
-            <Navbar fixed='top' expand='sm'>
+            <Navbar fixed='top' expand='sm' className='header-nav'>
                 <NavbarBrand href="/">MetaPhoto</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="me-auto" pills>
                         <NavItem onClick={props.onFilter} className='menu-item'>
-                            <NavLink><i className="fa-filter"></i> Filtros</NavLink>
+                            <Button><i class="fi fi-rr-settings-sliders"></i> Filtros</Button>
                         </NavItem>
                         <NavItem>
                             <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown}>

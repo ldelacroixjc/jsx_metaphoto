@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+# MetaPhoto Frontend
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## prerequisites
 
-In the project directory, you can run:
+- Node.js 16 or later
+- npm or yarn
+
 
 ### `npm start`
 
