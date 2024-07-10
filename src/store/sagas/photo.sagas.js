@@ -2,11 +2,14 @@ import { all, call, fork, put, takeEvery } from 'redux-saga/effects';
 import { actionTypes, setPhotos } from '../actions/photo.actions';
 import { $http } from "../http/http";
 
-const getPhotosService = async (filters) => {
+const getPhotosService = async (payload) => {
     const api_resource = (process.env.NODE_ENV === 'production') 
     ? '/prod/externalapi/photos' 
     : '/dev/externalapi/photos';
-    const result = await $http.get(`${api_resource}${filters}`);
+    console.log(payload)
+    const {filters, limit} = payload;
+    const queryParams = `?limit=${limit}${filters}`
+    const result = await $http.get(`${api_resource}${queryParams}`);
     return result;
 }
 

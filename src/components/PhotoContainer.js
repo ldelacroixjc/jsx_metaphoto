@@ -12,12 +12,12 @@ const PhotoContainer = props => {
    
     useEffect(() => {
         console.log(props.filters);
-        dispatch(getPhotos(props.filters));
+        dispatch(getPhotos(props.filters, props.limit));
 	}, []);
 
     useEffect(() => {
-        dispatch(getPhotos(props.filters));
-	}, [props.filters]);
+        dispatch(getPhotos(props.filters, props.limit));
+	}, [props.filters, props.limit]);
 
     useEffect(() => {
         if(list.length > 0){
