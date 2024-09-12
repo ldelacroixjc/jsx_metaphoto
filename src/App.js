@@ -16,7 +16,7 @@ function App() {
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
                 
-                <iframe src={publicUrl} width={1560} height={850} />
+                <iframe src="http://analytics-metabase.apps.dev.relishiq.com/embed/dashboard/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZSI6eyJkYXNoYm9hcmQiOjF9LCJwYXJhbXMiOnt9LCJleHAiOjE3MjYxNTQ3NzEsImlhdCI6MTcyNjE1NDE3MX0.BZwIbL1pwzS6wpJSJ-QN_ZR9xwKpBJwglZTp-sHKOss#bordered=true&titled=true" width={1560} height={850} />
                
             </PersistGate>
         </Provider>		
